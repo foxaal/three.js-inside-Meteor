@@ -1,0 +1,12 @@
+Standard Meteor project called, stupidly, threejs, so:
+	> meteor create threejs
+
+1. Added a line to three.js: window.THREE = THREE;
+   This yielded threeHACK.js (it ain't the exact one at three.js)
+2. Placed threeHACK.js in client/lib under the Meteor project
+3. Added Template.hello.rendered in the threejs.js file with the javacript code to make "calls" to three.js
+
+NOTES
+
+a. Meteor seems to load threeHACK.js automagically
+b. Seems necessary to use the Template.hello.rendered wrapper around the javascript code that makes use of three.js "library"
